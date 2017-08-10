@@ -1,7 +1,7 @@
 # Orphe-Music-Controller-Sample
 Orphe Hub &lt;-> OSC &lt;-> openFrameworks
 
-You can controll music by using Orphe.
+You can controll music by using Orphe.  
 Please put the sound file in bin/data/music.
 
 sample sound file by Open JTalk  
