@@ -7,6 +7,7 @@
 void SoundManager::setup(){
     loadSound();
     sp=1;
+    isPaused=false;
 }
 
 //--------------------------------------------------------------
@@ -84,12 +85,34 @@ void SoundManager::playStopSound(){
         if(soundList[soundPlayingNum].isLoaded()){
             soundList[soundPlayingNum].play();
         }
+    }else if(isPaused){
+        if(soundList[soundPlayingNum].isLoaded()){
+            soundList[soundPlayingNum].setPaused(false);
+            isPaused = false;
+        }
     }else{
         if(soundList[soundPlayingNum].isLoaded()){
             soundList[soundPlayingNum].stop();
         }
     }
 }
+
+//--------------------------------------------------------------
+void SoundManager::pauseSound(){
+    
+    if(soundList[soundPlayingNum].isPlaying() && !isPaused){
+        if(soundList[soundPlayingNum].isLoaded()){
+            soundList[soundPlayingNum].setPaused(true);
+            isPaused = true;
+        }
+    }else if (isPaused){
+        if(soundList[soundPlayingNum].isLoaded()){
+            soundList[soundPlayingNum].setPaused(false);
+            isPaused = false;
+        }
+    }
+}
+
 //--------------------------------------------------------------
 void SoundManager::changeSound(){
     

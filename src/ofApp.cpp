@@ -151,6 +151,10 @@ void ofApp::keyPressed(int key){
             soundManager.playStopSound();
             oscManager.triggerLightWithRGBColor(2, 2, 255, 255, 255);
             break;
+        case 'p': //sound pause
+            soundManager.pauseSound();
+            oscManager.triggerLightWithRGBColor(2, 2, 255, 255, 255);
+            break;
         case 'n': //change sound
             soundManager.changeSound();
             break;

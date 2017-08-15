@@ -27,6 +27,7 @@ public:
     void loadSound();
     void unloadSound();
     void playStopSound();
+    void pauseSound();
     void changeSound();
     void changeSoundSpeed(float param);
     
@@ -37,6 +38,7 @@ public:
     
     double sp;
     double pos;
+    bool isPaused;
     float mag;
     float magHSV;
     float magRGB;
