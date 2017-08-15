@@ -95,8 +95,9 @@ void ofApp::update(){
             oscManager.heelCount[0]=0;
             
         }else if(oscManager.heelCount[1]>=3){ //right
-            
-            soundManager.changeSound();
+            if (soundManager.soundList[soundManager.soundPlayingNum].isPlaying()) {
+                soundManager.changeSound();
+            }
             oscManager.heelCount[1]=0;
             oscManager.triggerLightWithRGBColor(2, 2, 255, 255, 255);
             
