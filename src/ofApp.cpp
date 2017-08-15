@@ -74,7 +74,7 @@ void ofApp::update(){
     }
     
     //sound end
-    if(soundManager.pos >= 1.0){
+    if(soundManager.pos >= 0.99){
         oscManager.triggerLightWithRGBColor(2, 2, 255, 255, 255);
         soundManager.changeSound();
     }
