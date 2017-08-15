@@ -21,7 +21,8 @@ http://openframeworks.cc
 - ofxGui
 
 ## How to use
-TBA
+※開発環境のない方でも以下URLよりお試しいただけます
+https://drive.google.com/file/d/0B00sNUjrVFMIZUgzWFdCZHZzMU0/view?usp=sharing
 ### アプリ起動前にすること
 - OrpheとHUB Appを接続しておく
 - bin/data/music以下にサウンドファイル（wav、aif、mp3）を入れておく
