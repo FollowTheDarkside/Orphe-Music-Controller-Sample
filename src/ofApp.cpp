@@ -85,14 +85,14 @@ void ofApp::update(){
     if(!isHeelLocked){
         if(oscManager.heelCount[0]>=3){ //left
             
-            if (soundManager.soundList[soundManager.soundPlayingNum].isPlaying()) {
-                oscManager.setLightOff(2, DEFAULT_LIGHT_NUM);
-            }else{
+            if (!soundManager.soundList[soundManager.soundPlayingNum].isPlaying()) {
                 oscManager.setLightOn(2, DEFAULT_LIGHT_NUM);
+            }else if(!soundManager.isPaused){
+                oscManager.setLightOff(2, DEFAULT_LIGHT_NUM);
             }
             soundManager.playStopSound();
-            oscManager.heelCount[0]=0;
             oscManager.triggerLightWithRGBColor(2, 2, 255, 255, 255);
+            oscManager.heelCount[0]=0;
             
         }else if(oscManager.heelCount[1]>=3){ //right
             
@@ -143,10 +143,10 @@ void ofApp::keyPressed(int key){
             }
             break;
         case 's': //sound play & stop
-            if (soundManager.soundList[soundManager.soundPlayingNum].isPlaying()) {
-                oscManager.setLightOff(2, DEFAULT_LIGHT_NUM);
-            }else{
+            if (!soundManager.soundList[soundManager.soundPlayingNum].isPlaying()) {
                 oscManager.setLightOn(2, DEFAULT_LIGHT_NUM);
+            }else if(!soundManager.isPaused){
+                oscManager.setLightOff(2, DEFAULT_LIGHT_NUM);
             }
             soundManager.playStopSound();
             oscManager.triggerLightWithRGBColor(2, 2, 255, 255, 255);
@@ -156,7 +156,10 @@ void ofApp::keyPressed(int key){
             oscManager.triggerLightWithRGBColor(2, 2, 255, 255, 255);
             break;
         case 'n': //change sound
-            soundManager.changeSound();
+            if (soundManager.soundList[soundManager.soundPlayingNum].isPlaying()) {
+                soundManager.changeSound();
+                oscManager.triggerLightWithRGBColor(2, 2, 255, 255, 255);
+            }
             break;
         case 'i': //draw info
             if(INFO){
@@ -247,8 +250,10 @@ void ofApp::drawInfo(){
     for(int i=0; i<soundManager.loadedSoundNum; i++){
         if(soundManager.soundList[i].isLoaded()){
             info+=soundManager.soundName[i];
-            if(soundManager.soundList[i].isPlaying()){
+            if(soundManager.soundList[i].isPlaying() && !soundManager.isPaused){
                 info+=" : Now Playing!";
+            }else if(soundManager.soundList[i].isPlaying() && soundManager.isPaused){
+                info+=" : Paused";
             }
             info+="\n";
         }

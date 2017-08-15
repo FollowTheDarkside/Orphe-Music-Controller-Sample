@@ -120,6 +120,7 @@ void SoundManager::pauseSound(){
 void SoundManager::changeSound(){
     
     if(soundList[soundPlayingNum].isLoaded()){
+        soundList[soundPlayingNum].setPaused(false);
         soundList[soundPlayingNum].stop();
     }
     
@@ -131,6 +132,7 @@ void SoundManager::changeSound(){
     
     if(soundList[soundPlayingNum].isLoaded()){
         soundList[soundPlayingNum].play();
+        isPaused = false;
     }
 }
 
