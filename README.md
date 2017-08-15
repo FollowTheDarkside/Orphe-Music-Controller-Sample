@@ -26,8 +26,8 @@ The application used in demos is different from Orphe-Music-Controller-Sample.
 [![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/UZJJ25Yc6ls/0.jpg)](http://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)
 
 ## How to use
-※開発環境のない方でも以下URLよりお試しいただけます
-https://drive.google.com/open?id=0B00sNUjrVFMIZWNBN3o1TWdoVVU
+※開発環境のない方でも以下URLよりお試しいただけます  
+https://drive.google.com/open?id=0B00sNUjrVFMIV1laZk5zdjg4Snc
 ### アプリ起動前にすること
 - OrpheとHUB Appを接続しておく
 - bin/data/music以下にサウンドファイル（wav、aif、mp3）を入れておく
