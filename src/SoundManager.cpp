@@ -6,8 +6,10 @@
 //--------------------------------------------------------------
 void SoundManager::setup(){
     loadSound();
-    sp=1;
-    isPaused=false;
+    sp = 1;
+    pos = 0;
+    posMS = 0;
+    isPaused = false;
 }
 
 //--------------------------------------------------------------
@@ -28,6 +30,7 @@ void SoundManager::update(){
     
     soundList[soundPlayingNum].setSpeed(sp);
     pos = soundList[soundPlayingNum].getPosition();
+    posMS = soundList[soundPlayingNum].getPositionMS();
 }
 
 //--------------------------------------------------------------

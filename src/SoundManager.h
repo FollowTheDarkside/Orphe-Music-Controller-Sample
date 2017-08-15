@@ -38,6 +38,7 @@ public:
     
     double sp;
     double pos;
+    double posMS;
     bool isPaused;
     float mag;
     float magHSV;

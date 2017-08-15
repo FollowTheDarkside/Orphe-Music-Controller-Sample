@@ -265,7 +265,11 @@ void ofApp::drawSoundCircle(){
     
     ofTranslate(ofGetWidth()/2, ofGetHeight()/2);
     
-    soundCircleRotation+=soundManager.sp*5;
+    if(!soundManager.soundList[soundManager.soundPlayingNum].isPlaying()){
+        soundCircleRotation = 0;
+    }else{
+        soundCircleRotation = soundManager.posMS*0.5;
+    }
     ofRotateZ(soundCircleRotation);
     
     ofFill();
