@@ -36,7 +36,7 @@ class ofApp : public ofBaseApp{
     
     void drawSoundCircle();
     float soundCircleRotation;
-    ofTrueTypeFont verdana;
+    ofTrueTypeFont yeseva;
     
     void setOrpheRotation(int LorR);
     void drawCone(int LorR);

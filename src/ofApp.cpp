@@ -18,7 +18,7 @@ void ofApp::setup(){
     
     soundCircleRotation=0;
     
-    verdana.load("verdana.ttf", 10);
+    yeseva.load("font/YesevaOne-Regular.ttf", 10);
     
     INFO = true;
     
@@ -279,7 +279,7 @@ void ofApp::drawSoundCircle(){
     ofNoFill();
     
     ofSetColor(0, 0, 0);
-    verdana.drawString("Orphe", -20, 30);
+    yeseva.drawString("Orphe", -20, 30);
     
     ofPopMatrix();
 }
