@@ -19,3 +19,6 @@ http://openframeworks.cc
 ### addons
 - ofxOsc
 - ofxGui
+
+## How to use
+TBA
