@@ -27,8 +27,8 @@ void ofApp::setup(){
     gui.add(isSoundCircle.setup("soundCircle", true));
     gui.add(isCone.setup("cone", false));
     
-    gui.add(isHeelLocked.setup("heelLock", false));
     gui.add(heelElapsedTime.setup("heelElapsedTime", 1, 0, 5));
+    gui.add(isHeelLocked.setup("heelLock", false));
     gui.add(toeMode.setup("toeMode", true));
     gui.add(gyroMode.setup("gyroMode", false));
     gui.add(gyroDirectMode.setup("gyroDirectMode", false));
@@ -39,7 +39,6 @@ void ofApp::setup(){
     
     gui.setPosition(ofGetWidth()-200, 0);
     gui.setName("OMC GUI");
-    
 }
 
 //--------------------------------------------------------------
@@ -229,18 +228,17 @@ void ofApp::drawInfo(){
     string info;
     
     info+="-------------INFO-------------\n";
-    info+="eX = " + ofToString(oscManager.eulerX[0]) + "\n";
-    info+="eY = " + ofToString(oscManager.eulerY[0]) + "\n";
-    info+="eZ = " + ofToString(oscManager.eulerZ[0]) + "\n";
-    info+="toe = " + ofToString(oscManager.isToeGesture) + "\n";
+    //info+="eulerX = " + ofToString(oscManager.eulerX[0]) + "\n";
+    //info+="eulerY = " + ofToString(oscManager.eulerY[0]) + "\n";
+    //info+="eulerZ = " + ofToString(oscManager.eulerZ[0]) + "\n";
     info+="heel left count  = " + ofToString(oscManager.heelCount[0]) + "\n";
     info+="heel right count = " + ofToString(oscManager.heelCount[1]) + "\n";
-    info+="mag = " + ofToString(soundManager.mag) + "\n";
-    //info+="magHSV = " + ofToString(soundManager.magHSV) + "\n";
+    info+="volume = " + ofToString(soundManager.mag) + "\n";
+    //info+="volume for HSV = " + ofToString(soundManager.magHSV) + "\n";
     info+="speed = " + ofToString(soundManager.sp) + "\n";
     info+="position = " + ofToString(soundManager.pos) + "\n";
     info+="loaded sound num = " + ofToString(soundManager.loadedSoundNum) + "\n";
-    info+="sound num = " + ofToString(soundManager.soundPlayingNum) + "\n";
+    //info+="sound num = " + ofToString(soundManager.soundPlayingNum) + "\n";
     info+="-----------PLAYLIST-----------\n";
     for(int i=0; i<soundManager.loadedSoundNum; i++){
         if(soundManager.soundList[i].isLoaded()){
