@@ -20,6 +20,11 @@ http://openframeworks.cc
 - ofxOsc
 - ofxGui
 
+## Demo
+The application used in demos is different from Orphe-Music-Controller-Sample.  
+[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/mOG9A0VkJno/0.jpg)](http://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)
+[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/UZJJ25Yc6ls/0.jpg)](http://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)
+
 ## How to use
 ※開発環境のない方でも以下URLよりお試しいただけます
 https://drive.google.com/file/d/0B00sNUjrVFMIZUgzWFdCZHZzMU0/view?usp=sharing
