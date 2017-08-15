@@ -22,3 +22,39 @@ http://openframeworks.cc
 
 ## How to use
 TBA
+### アプリ起動前にすること
+- OrpheとHUB Appを接続しておく
+- bin/data/music以下にサウンドファイル（wav、aif、mp3）を入れておく
+### 画面の説明
+#### INFO
+- heel count：かかと踏み込み回数（3回まで）
+- volume：音量
+- speed：再生速度
+- position：再生位置
+- loaded sound num：ロードした楽曲の数（10曲まで）
+#### PLAYLIST
+ロードしたサウンドファイル名の一覧が表示される（英語表記のみ、ABC順）
+#### OMC GUI
+- soundCircle：レコードプレイヤー的なビジュアル
+- cone：Orpheの姿勢を表示
+- heelElapsedTime：かかと踏み込み回数の認識間隔（低いとすぐ回数が0にリセットされる）
+- heelLock：かかと踏み込みを認識したくないときにチェック
+- toeMode：再生速度の加算パラメーターにつま先踏み込みジェスチャーを使用
+- gyroMode：再生速度の加算パラメーターにOrpheの角速度の値を使用
+- gyroDirectMode：再生速度にOrpheの角速度が直接反映される
+- toeUpParam：高いほど再生速度が上がりやすくなる（toeMode設定時）
+- gyroUpParam：高いほど再生速度が上がりやすくなる（gyroMode設定時）
+- gyroDirectParam：高いほど再生速度が上がりやすくなる（gyroDirectMode設定時）
+- downParam：高いほど再生速度が下がりやすくなる（toeMode、gyroMode設定時）
+### 操作方法
+#### Orphe
+- 左かかと3回踏み込み：再生・停止
+- 右かかと3回踏み込み：曲の変更
+#### キーボード
+- f：フルスクリーン表示
+- l：サウンドファイルのロード&アンロード
+- s：再生・停止
+- p：一時停止
+- n：曲の変更
+- i：INFO&PLAYLIST&OMC GUIの表示
+- escキー：アプリの終了
