@@ -37,37 +37,25 @@ void SoundManager::update(){
 void SoundManager::loadSound(){
     loadedSoundNum=0;
     
-    //get sound file name and load sound file
-    DIR* dp=opendir("../../../data/music");
-    if (dp!=NULL)
-    {
-        struct dirent* dent;
-        do{
-            dent = readdir(dp);
-            if (dent!=NULL){
-                cout<<dent->d_name<<endl;
-                soundName[loadedSoundNum]=dent->d_name;
-                
-                if(soundName[loadedSoundNum].front() != '.'){
-                    string musicPass = "music/";
-                    musicPass += soundName[loadedSoundNum];
-                    soundList[loadedSoundNum].load(musicPass, true);
-                    if(soundList[loadedSoundNum].isLoaded()){
-                        //Delete character string after "."
-                        size_t c;
-                        while((c = soundName[loadedSoundNum].find_first_of(".")) != string::npos){
-                            soundName[loadedSoundNum].erase(c,5);
-                        }
-                        loadedSoundNum++;
-                    }
-                }
-                
-                
-            }
-        }while(dent!=NULL);
-        closedir(dp);
+    string folderName = "music/";
+    ofDirectory dir(folderName);
+    dir.listDir();
+    dir.allowExt("mp3");
+    dir.allowExt("wav");
+    for(int i = 0; i < dir.size(); i++){
+        cout << dir.getName(i) << endl;
+        soundName[i] = dir.getName(i);
+        string musicPass = "music/";
+        musicPass += soundName[i];
+        soundList[i].load(musicPass, true);
+        
+        //Delete character string after "."
+        soundName[i].erase(soundName[i].find("."), 4);
+        
+        if(soundList[i].isLoaded()){
+            loadedSoundNum++;
+        }
     }
-    
 }
 
 //--------------------------------------------------------------
