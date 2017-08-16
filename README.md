@@ -23,9 +23,9 @@ http://openframeworks.cc
 ## Demo
 The application used in demos is different from Orphe-Music-Controller-Sample.  
 
-[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/mOG9A0VkJno/0.jpg)](http://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)  
+[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/mOG9A0VkJno/0.jpg)](http://www.youtube.com/watch?v=mOG9A0VkJno)  
 https://youtu.be/mOG9A0VkJno  
-[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/UZJJ25Yc6ls/0.jpg)](http://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)  
+[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/UZJJ25Yc6ls/0.jpg)](http://www.youtube.com/watch?v=UZJJ25Yc6ls)  
 https://youtu.be/UZJJ25Yc6ls  
 
 ## How to use
