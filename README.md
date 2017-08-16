@@ -21,16 +21,22 @@ http://openframeworks.cc
 - ofxGui
 
 ## Demo
-The application used in demos is different from Orphe-Music-Controller-Sample.  
-[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/mOG9A0VkJno/0.jpg)](http://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)
-[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/UZJJ25Yc6ls/0.jpg)](http://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)
+The application used in demos is different from Orphe-Music-Controller-Sample.  
+
+[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/mOG9A0VkJno/0.jpg)](http://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)  
+https://youtu.be/mOG9A0VkJno  
+[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/UZJJ25Yc6ls/0.jpg)](http://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)  
+https://youtu.be/UZJJ25Yc6ls
 
 ## How to use
-※開発環境のない方でも以下URLよりお試しいただけます  
-URL:TBA
+開発環境のない方でも以下URLよりお試しいただけます。  
+その場合、サウンドファイルを入れる場所が異なりますのでご注意ください。  
+1.appファイルを右クリックして「パッケージの内容を表示」を選択  
+2.Contents/Resources/data/music内にサウンドファイルを入れる  
+https://drive.google.com/file/d/0B00sNUjrVFMIUkhCdFJ4WmZXb0U/view?usp=sharing
 ### アプリ起動前にすること
 - OrpheとHUB Appを接続しておく
-- bin/data/music以下にサウンドファイル（wav、aif、mp3）を入れておく
+- bin/data/music以下にサウンドファイル（wav、mp3）を入れておく
 ### 画面の説明
 #### INFO
 - heel count：かかと踏み込み回数（3回まで）
