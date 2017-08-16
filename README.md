@@ -35,6 +35,7 @@ https://youtu.be/UZJJ25Yc6ls
 2. Contents/Resources/data/music内にサウンドファイルを入れる  
 
 https://drive.google.com/file/d/0B00sNUjrVFMIUkhCdFJ4WmZXb0U/view?usp=sharing  
+（2017/8/16）  
 ### アプリ起動前にすること
 - OrpheとHUB Appを接続しておく
 - bin/data/music以下にサウンドファイル（wav、mp3）を入れておく
