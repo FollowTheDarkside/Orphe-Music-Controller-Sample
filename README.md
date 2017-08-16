@@ -31,7 +31,7 @@ https://youtu.be/UZJJ25Yc6ls
 ## How to use
 開発環境のない方でも以下URLよりお試しいただけます。  
 その場合、サウンドファイルを入れる場所が異なりますのでご注意ください。  
-1. appファイルを右クリックして「パッケージの内容を表示」を選択  
+1. Finderでappファイルを右クリックし「パッケージの内容を表示」を選択  
 2. Contents/Resources/data/music内にサウンドファイルを入れる  
 
 https://drive.google.com/file/d/0B00sNUjrVFMIUkhCdFJ4WmZXb0U/view?usp=sharing  
